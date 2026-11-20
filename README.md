@@ -84,7 +84,7 @@ CREATE DATABASE clinic_db;
 
 ## Environment Variables
 
-Create a `.env` file inside the `backend` folder.
+
 
 Configure the following variables:
 
@@ -110,7 +110,7 @@ SECRET_KEY=your_secure_secret_key
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
-**Security:** Never upload your actual `.env` file, database password, or JWT secret to GitHub.
+
 
 ## Backend Setup
 
