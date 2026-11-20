@@ -202,7 +202,6 @@ For evaluation, you can add your working test accounts below:
 - Email: doctortest@example.com
 - Password: Zaidi@12345
 
-Replace these placeholders with actual working test account credentials before submitting the project. Use dedicated test accounts, not personal accounts.
 
 ## Testing
 
