@@ -195,12 +195,12 @@ Register a new patient or doctor through the registration page to create your ow
 For evaluation, you can add your working test accounts below:
 
 ### Patient Account
-- Email: `REPLACE_WITH_TEST_PATIENT_EMAIL`
-- Password: `REPLACE_WITH_TEST_PATIENT_PASSWORD`
+- Email: zeyaurmtp123@gmail.com
+- Password: Zaidi@123
 
 ### Doctor Account
-- Email: `REPLACE_WITH_TEST_DOCTOR_EMAIL`
-- Password: `REPLACE_WITH_TEST_DOCTOR_PASSWORD`
+- Email: doctortest@example.com
+- Password: Zaidi@12345
 
 Replace these placeholders with actual working test account credentials before submitting the project. Use dedicated test accounts, not personal accounts.
 
