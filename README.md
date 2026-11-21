@@ -17,6 +17,7 @@ ClinicCare is a web-based clinic appointment booking system that allows patients
 - Mark appointments as COMPLETED or NO_SHOW
 - Weekly appointment reports
 - Patient and doctor dashboards
+- Docker-based application setup
 
 ## Technology Stack
 
@@ -46,17 +47,24 @@ ClinicAppointmentSystem/
 │
 ├── backend/
 │   ├── app/
+│   │   ├── core/
+│   │   ├── models/
+│   │   ├── routers/
+│   │   └── schemas/
 │   ├── tests/
 │   ├── alembic/
-│   ├── .env
+│   │   └── versions/
+│   ├── Dockerfile
 │   ├── alembic.ini
 │   └── requirements.txt
 │
 ├── frontend/
 │   ├── src/
 │   ├── public/
+│   ├── Dockerfile
 │   └── package.json
 │
+├── docker-compose.yml
 ├── ER_Diagram.md
 ├── .gitignore
 └── README.md
@@ -84,8 +92,6 @@ CREATE DATABASE clinic_db;
 
 ## Environment Variables
 
-
-
 Configure the following variables:
 
 | Variable | Description |
@@ -109,8 +115,6 @@ DB_NAME=clinic_db
 SECRET_KEY=your_secure_secret_key
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
-
-
 
 ## Backend Setup
 
@@ -154,11 +158,11 @@ python -m uvicorn app.main:app --reload
 
 Backend URL:
 
-http://127.0.0.1:8000
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 API Documentation (Swagger):
 
-http://127.0.0.1:8000/docs
+[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ## Frontend Setup
 
@@ -184,7 +188,7 @@ npm run dev
 
 Open the application:
 
-http://localhost:3000
+[http://localhost:3000](http://localhost:3000)
 
 ## Sample Credentials
 
@@ -192,7 +196,7 @@ The application supports patient and doctor registration.
 
 Register a new patient or doctor through the registration page to create your own login credentials.
 
-For evaluation, you can add your working test accounts below:
+For evaluation, use working test accounts created in the application.
 
 ### Patient Account
 - Email: zeyaurmtp123@gmail.com
@@ -201,8 +205,6 @@ For evaluation, you can add your working test accounts below:
 ### Doctor Account
 - Email: doctortest@example.com
 - Password: Zaidi@12345
-
-
 ## Testing
 
 Run backend tests from the backend directory.
